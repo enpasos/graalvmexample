@@ -19,7 +19,7 @@ docker run --rm demo:0.0.1-SNAPSHOT
 * via a native image (GraalVM)
 ```
 gradlew nativeCompile
-build/native/nativeCompile/demo.exe
+build\native\nativeCompile\demo.exe
 ```
  
 
@@ -27,4 +27,7 @@ build/native/nativeCompile/demo.exe
 
 ### M1 - 2024-02-05
 An initial version of the project has been created. It is a simple Spring Boot application.
-
+### M2 - 2024-02-05
+- dependency management in ```libs.versions.toml```
+- subproject for app
+- application.properties -> application.yml
