@@ -19,7 +19,7 @@ docker run --rm demo:0.0.1-SNAPSHOT
 * via a native image (GraalVM)
 ```
 gradlew nativeCompile
-build/native/nativeCompile/demo.exe
+build\native\nativeCompile\demo.exe
 ```
  
 
