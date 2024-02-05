@@ -10,27 +10,29 @@ plugins {
     id("com.enpasos.muzero.java-conventions")
     alias(libs.plugins.springboot)
     alias(libs.plugins.spring.dependencyManagement)
-
     alias(libs.plugins.graalvm)
     id("idea")
 }
 
-//group = "com.example"
-//version = "0.0.1-SNAPSHOT"
-//
-//java {
-//	sourceCompatibility = JavaVersion.VERSION_21
-//}
-
-//repositories {
-//    mavenCentral()
-//}
 
 dependencies {
     implementation(project(":platform"))
     implementation(libs.springboot.starter)
     testImplementation(libs.springboot.starter.test)
 }
+
+
+//graalvmNative {
+//    binaries {
+//        named("main") {
+//            mainClass.set("com.example.demo.DemoApplication")
+//        }
+//        named("test") {
+//            buildArgs.addAll("--verbose", "-O0")
+//        }
+//    }
+//}
+
 
 tasks.withType<Test> {
     useJUnitPlatform()
