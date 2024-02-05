@@ -60,7 +60,7 @@ stochasticsimulation = { module = "ca.umontreal.iro.simul:ssj", version = "3.3.2
 
 [bundles]
 djl = ["djl-model-zoo", "djl-basicdataset", "djl-pytorch-engine", "djl-pytorch-model-zoo", "djl-pytorch-native-cu121"]
-commons = ["commons-math", "commons-csv", "commons-cli", "commons-io", "commons-lang", "commons-collections" ]
+commons = ["commons-math", "commons-csv", "commons-cli", "commons-io", "commons-lang", "commons-collections"]
 
 
 [plugins]

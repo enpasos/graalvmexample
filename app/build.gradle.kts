@@ -7,12 +7,12 @@
 
 
 plugins {
-	id("com.enpasos.muzero.java-conventions")
-	alias(libs.plugins.springboot)
-	alias(libs.plugins.spring.dependencyManagement)
+    id("com.enpasos.muzero.java-conventions")
+    alias(libs.plugins.springboot)
+    alias(libs.plugins.spring.dependencyManagement)
 
-	alias(libs.plugins.graalvm)
-	id("idea")
+    alias(libs.plugins.graalvm)
+    id("idea")
 }
 
 //group = "com.example"
@@ -22,15 +22,16 @@ plugins {
 //	sourceCompatibility = JavaVersion.VERSION_21
 //}
 
-repositories {
-	mavenCentral()
-}
+//repositories {
+//    mavenCentral()
+//}
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+    implementation(project(":platform"))
+    implementation(libs.springboot.starter)
+    testImplementation(libs.springboot.starter.test)
 }
 
 tasks.withType<Test> {
-	useJUnitPlatform()
+    useJUnitPlatform()
 }
