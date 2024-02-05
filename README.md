@@ -34,10 +34,9 @@ app\build\native\nativeCompile\app.exe
 
 An initial version of the project has been created. It is a simple Spring Boot application.
 
-### M2-SNAPSHOT (2024-02-12)
+### M2 - 2024-02-12 
 
 - dependency management in ```libs.versions.toml```
 - subproject for app
 - and a subproject platform for commons functions
-- application.properties -> application.yml
-- BUG: somehow now .exe is created ... trying to figure out why
+- application.properties -> application.yml 

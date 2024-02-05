@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication { // implements CommandLineRunner {
+public class DemoApplication  implements CommandLineRunner {
 
     //Logger logger = LoggerFactory.getLogger(LoggingController.class);
 
@@ -14,8 +14,8 @@ public class DemoApplication { // implements CommandLineRunner {
     }
 
 
-//    public void run(String... args) {
-//        System.out.println("Hello, World!");
-//    }
+    public void run(String... args) {
+        System.out.println("Hello, World!");
+    }
 
 }
