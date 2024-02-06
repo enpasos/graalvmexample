@@ -44,4 +44,5 @@ An initial version of the project has been created. It is a simple Spring Boot a
 ### M3 - 2024-02-07 
 
 - logging
-- configuration using application.yml and @Autowired injection
+- configuration using application.yml and @Autowired injecting a configuration bean from a submodule
+- using @Slf4j and @Data from lombok in a submodule component

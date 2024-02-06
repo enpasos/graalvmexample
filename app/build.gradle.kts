@@ -19,7 +19,23 @@ dependencies {
     implementation(project(":platform"))
     implementation(libs.springboot.starter)
     testImplementation(libs.springboot.starter.test)
+
+    //implementation(libs.djl.api)
+    //implementation(libs.slf4j.simple)
+
+    compileOnly(libs.lombok)
+    annotationProcessor(libs.lombok)
+    testCompileOnly(libs.lombok)
+    testAnnotationProcessor(libs.lombok)
 }
+
+configurations {
+    all {
+        exclude(group = "org.apache.logging.log4j", module = "log4j-to-slf4j")
+        exclude(group = "org.slf4j", module = "slf4j-simple")
+    }
+}
+
 
 graalvmNative {
 //    agent {
@@ -111,3 +127,4 @@ graalvmNative {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
+

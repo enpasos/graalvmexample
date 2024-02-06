@@ -26,26 +26,18 @@ plugins {
 
     dependencies {
 
- //   implementation(libs.springboot.starter)
- //   testImplementation(libs.springboot.starter.test)
+    implementation(libs.springboot.starter)
+    testImplementation(libs.springboot.starter.test)
 
     implementation(libs.bundles.commons)
 
         implementation(libs.djl.api)
 
+        compileOnly(libs.lombok)
+        annotationProcessor(libs.lombok)
+        testCompileOnly(libs.lombok)
+        testAnnotationProcessor(libs.lombok)
 
-
-//    implementation(libs.stochasticsimulation)
-//
-//    compileOnly(libs.lombok)
-//    annotationProcessor(libs.lombok)
-//    testCompileOnly(libs.lombok)
-//    testAnnotationProcessor(libs.lombok)
-//
-//    implementation(libs.javax.annotation.api)
-
-//    compileOnly(libs.jetbrains.annotations)
-//    testCompileOnly(libs.jetbrains.annotations)
 
 }
 
