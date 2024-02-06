@@ -11,14 +11,14 @@ For each milestone, three ways to build and run the application need to work:
 
 ```
 gradlew clean build
-java -jar app/build/libs/app-0.0.2-SNAPSHOT.jar
+java -jar app/build/libs/app-0.0.3-SNAPSHOT.jar
 ```
 
 * via a docker container
 
 ```
 gradlew bootBuildImage
-docker run --rm app:0.0.2-SNAPSHOT
+docker run --rm app:0.0.3-SNAPSHOT
 ```
 
 * via a native image (GraalVM)
@@ -34,9 +34,14 @@ app\build\native\nativeCompile\app.exe
 
 An initial version of the project has been created. It is a simple Spring Boot application.
 
-### M2 - 2024-02-12 
+### M2 - 2024-02-06 
 
 - dependency management in ```libs.versions.toml```
 - subproject for app
 - and a subproject platform for commons functions
 - application.properties -> application.yml 
+
+### M3 - 2024-02-07 
+
+- logging
+- configuration using application.yml and @Autowired injection

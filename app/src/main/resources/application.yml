@@ -8,3 +8,5 @@ logging:
   level:
     root: WARN
     com.example: debug
+app:
+  hello: Hello World from config

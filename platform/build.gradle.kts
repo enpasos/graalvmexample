@@ -31,7 +31,7 @@ plugins {
 
     implementation(libs.bundles.commons)
 
-
+        implementation(libs.djl.api)
 
 
 
